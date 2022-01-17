@@ -1,0 +1,78 @@
+
+TODO:
+-----------------------------------------------
+
+Pulled:
+    
+
+
+
+Ready:
+-poe
+-barrel countdown
+-barrel chaining
+
+-attack move
+-attack range
+-animation tree
+-sky box
+-glob walk
+
+
+Blocked on AnimTree:
+    -repeat shooting same target.
+    -dash animation
+
+    
+
+-Camera
+    -camera smoothing
+    -toggle unlocked camera
+    -rotatable camera?
+
+-Movement:
+    -pathing
+
+-Assets:
+    -main character
+    -enemy character
+
+-Levels
+    -dungeon blocks
+    -terrain mesh
+
+-dev ops
+    -perforce
+    -git?
+
+
+
+-enemies
+    -exploder
+    -skelington
+    
+
+
+
+
+-----------------------------------------
+
+Done:
+-glob jump
+-glob  
+-Explody Barrel Ability
+-enemy health bars
+-UI
+-player rotation
+-raytrace exclude character
+-enemy highlight outlining
+-dash With indicator
+-Custom context cursor
+-Orthographic camera
+-bullet track enemy
+-gun/with animations
+-shooting
+-animation
+-click target movement
+-zoom
+-camera follow.

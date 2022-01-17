@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Model/Character1/Character1.glb" type="PackedScene" id=1]
+[ext_resource path="res://Model/Character1/Character1.cs" type="Script" id=2]
+[ext_resource path="res://Model/Character1/Character1AnimationPlayer.cs" type="Script" id=3]
+[ext_resource path="res://Model/Character1/SkeletonCharacter1.cs" type="Script" id=4]
+
+[node name="Character2" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Skeleton" parent="Armature" index="0"]
+script = ExtResource( 4 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+script = ExtResource( 3 )

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Model/Spider/SpiderModel1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/SceneScripts/SpiderEnemy.cs" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 1.6
+
+[node name="SpiderEnemy" type="KinematicBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49125, 0 )
+shape = SubResource( 1 )
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Mesh" parent="Spatial" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0 )

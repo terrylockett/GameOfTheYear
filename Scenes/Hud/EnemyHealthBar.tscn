@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Hud/EnemyHealthBar.cs" type="Script" id=1]
+
+[node name="EnemyHealthBar" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackgroundBox" type="ColorRect" parent="."]
+margin_left = -52.5
+margin_right = 52.5
+margin_bottom = 20.0
+mouse_filter = 2
+
+[node name="HealthBox" type="ColorRect" parent="."]
+margin_left = -50.0
+margin_top = 2.5
+margin_right = 50.0
+margin_bottom = 17.5
+mouse_filter = 2
+color = Color( 0.843137, 0.0823529, 0.0823529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
