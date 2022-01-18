@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Images/Particles1/scorch_03.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/ParticleEffects/BarrelFireBall.cs" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.431818, 0.868182, 1 )
+colors = PoolColorArray( 1, 0, 0, 1, 0.959872, 0.513636, 0, 1, 0.921875, 1, 0, 1, 0.988235, 1, 0.839216, 0 )
+
+[sub_resource type="SphereShape" id=4]
+
+[node name="BarrelFireBall" type="Area"]
+script = ExtResource( 2 )
+
+[node name="CPUParticles" type="CPUParticles" parent="."]
+amount = 16
+mesh = SubResource( 2 )
+direction = Vector3( 0, 0, -1 )
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 0.2
+angular_velocity = 90.0
+angular_velocity_random = 0.5
+angle_random = 1.0
+scale_amount = 5.0
+scale_amount_random = 0.2
+color_ramp = SubResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 4 )
